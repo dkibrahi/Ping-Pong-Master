@@ -114,7 +114,7 @@ ball.x += ball.velocityX;
 ball.y += ball.velocityY;
 // computer plays for itself, and we must be able to beat it
 // simple AI
-com.y += ((ball.y - (com.y + com.height/2)))*0.03;
+com.y += ((ball.y - (com.y + com.height/2)))*0.05;
 // when the ball collides with bottom and top walls we inverse the y velocity.
 if(ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height){
 ball.velocityY = -ball.velocityY;
